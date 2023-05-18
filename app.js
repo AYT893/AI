@@ -31,7 +31,6 @@ function wishMe() {
     }
 }
 
-window.addEventListener('load', ()=>{
     speak("Activating jarvis");
     speak("Going online");
     wishMe();
@@ -144,8 +143,8 @@ else if(message.includes('open whatsapp')) {
     }
 
     speech.volume = 3;
-    speech.pitch = 1;
-    speech.rate = 1;
+    speech.pitch = 2;
+    speech.rate = 2;
 
     window.speechSynthesis.speak(speech);
 }
