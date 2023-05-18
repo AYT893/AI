@@ -4,7 +4,7 @@ const content = document.querySelector('.content');
 function speak(sentence) {
     const text_speak = new SpeechSynthesisUtterance(sentence);
 
-    text_speak.rate = 2;
+    text_speak.rate = 1;
     text_speak.pitch = 1;
 
     window.speechSynthesis.speak(text_speak);
@@ -31,6 +31,7 @@ function wishMe() {
     }
 }
 
+window.addEventListener('load', ()=>{
     speak("Activating jarvis");
     speak("Going online");
     wishMe();
@@ -71,7 +72,7 @@ function speakThis(message) {
     }
 
     else if(message.includes('open google')) {
-        window.open("https://www.google.com/", "_blank");
+        window.open("https://www.youtube.com/", "_blank");
         const finalText = "Opening Google";
         speech.text = finalText;
     }
@@ -143,8 +144,8 @@ else if(message.includes('open whatsapp')) {
     }
 
     speech.volume = 3;
-    speech.pitch = 2;
-    speech.rate = 2;
+    speech.pitch = 1;
+    speech.rate = 1;
 
     window.speechSynthesis.speak(speech);
 }
