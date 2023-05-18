@@ -71,7 +71,7 @@ function speakThis(message) {
     }
 
     else if(message.includes('open google')) {
-        window.open("https://www.youtube.com/", "_blank");
+        window.open("https://www.google.com/", "_blank");
         const finalText = "Opening Google";
         speech.text = finalText;
     }
